@@ -36,24 +36,114 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <!-- JSON-LD: LocalBusiness structured data -->
+  <!-- JSON-LD: LocalBusiness -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
+    "@id": "https://royalceramicworld.ambikainfotech.online/#business",
     "name": "Royal Ceramic World",
     "description": "Handcrafted ceramics blending ancient traditions with contemporary design — dinnerware, decorative pieces, planters and ceramic art.",
     "url": "https://royalceramicworld.ambikainfotech.online",
-    "logo": "https://royalceramicworld.ambikainfotech.online/favicon.ico",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://royalceramicworld.ambikainfotech.online/favicon.ico"
+    },
     "image": "https://royalceramicworld.ambikainfotech.online/og-image.jpg",
     "priceRange": "₹₹",
     "currenciesAccepted": "INR",
     "paymentAccepted": "Cash, Bank Transfer, UPI",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN"
+    },
     "sameAs": [
       "https://www.facebook.com",
       "https://www.instagram.com",
       "https://www.youtube.com",
       "https://www.linkedin.com"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Ceramic Collections",
+      "itemListElement": [
+        { "@type": "OfferCatalog", "name": "Dinnerware", "url": "https://royalceramicworld.ambikainfotech.online/collections/dinnerware" },
+        { "@type": "OfferCatalog", "name": "Decorative", "url": "https://royalceramicworld.ambikainfotech.online/collections/decorative" },
+        { "@type": "OfferCatalog", "name": "Planters", "url": "https://royalceramicworld.ambikainfotech.online/collections/planters" },
+        { "@type": "OfferCatalog", "name": "Art & Sculpture", "url": "https://royalceramicworld.ambikainfotech.online/collections/art" }
+      ]
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://royalceramicworld.ambikainfotech.online/#website",
+    "name": "Royal Ceramic World",
+    "url": "https://royalceramicworld.ambikainfotech.online",
+    "description": "Handcrafted ceramics — dinnerware, decorative pieces, planters and ceramic art.",
+    "inLanguage": "en-IN",
+    "publisher": { "@id": "https://royalceramicworld.ambikainfotech.online/#business" }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage (AEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of ceramics does Royal Ceramic World offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Royal Ceramic World offers four main collections: Dinnerware (plates, bowls, mugs, teapots from ₹35), Decorative pieces (vases, urns, hand-painted tiles from ₹25), Planters & Pots (indoor and outdoor garden containers from ₹30), and Art & Sculpture (limited edition collectibles from ₹150)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are Royal Ceramic World products handmade?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Every piece sold by Royal Ceramic World is handcrafted by skilled artisans using traditional ceramic techniques. Slight variations in colour, texture, and dimensions are natural and part of what makes each piece unique."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Royal Ceramic World accept custom ceramic orders?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Royal Ceramic World accepts custom and bespoke ceramic orders. Custom orders require a non-refundable deposit before production begins and typically take 4–8 weeks to complete. Contact via the website to discuss requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does shipping take from Royal Ceramic World?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In-stock items are dispatched within 2–3 business days and delivered within 5–7 business days across India. Free shipping is available on orders above ₹5,000. Custom orders take 4–8 weeks to produce before dispatch."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Royal Ceramic World ship internationally?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, international shipping is available for select items. Rates and delivery times vary by destination. Contact Royal Ceramic World with your location and product enquiry for a custom shipping quote."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the return policy for Royal Ceramic World?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Returns are accepted within 14 days of receipt for unused items in original packaging. If an item arrives damaged, notify Royal Ceramic World within 48 hours with photographs and a replacement or refund will be arranged. Custom orders are non-returnable unless defective."
+        }
+      }
     ]
   }
   </script>

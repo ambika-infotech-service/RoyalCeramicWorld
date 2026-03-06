@@ -1,0 +1,36 @@
+# Royal Ceramic World
+
+> Handcrafted ceramic brand offering dinnerware, decorative pieces, planters, and ceramic art sculptures. Based in India, ships nationwide and internationally.
+
+Royal Ceramic World is an artisan ceramics brand that blends ancient pottery traditions with contemporary design. Every piece is handcrafted by skilled artisans, making each item unique. The brand offers four main collections and accepts custom and bespoke orders.
+
+## Collections
+
+- [Dinnerware](https://royalceramicworld.ambikainfotech.online/collections/dinnerware): Artisan-crafted plates, bowls, mugs, and teapots for everyday elegance and special occasions. Prices from ₹35.
+- [Decorative](https://royalceramicworld.ambikainfotech.online/collections/decorative): Hand-painted tiles, vases, urns, and decorative vessels for home interiors. Prices from ₹25.
+- [Planters](https://royalceramicworld.ambikainfotech.online/collections/planters): Handcrafted ceramic planters and pots for indoor and outdoor gardens. Prices from ₹30.
+- [Art & Sculpture](https://royalceramicworld.ambikainfotech.online/collections/art): Limited edition ceramic sculptures and collectibles by master artisans. Prices from ₹150.
+
+## Pages
+
+- [Home](https://royalceramicworld.ambikainfotech.online/home): Brand introduction and overview of collections.
+- [All Products](https://royalceramicworld.ambikainfotech.online/products): Full product listing across all four collections.
+- [About Us](https://royalceramicworld.ambikainfotech.online/about): The story, artisans, and philosophy behind Royal Ceramic World.
+- [Contact](https://royalceramicworld.ambikainfotech.online/contact): Enquiry form for product orders, custom requests, and wholesale pricing.
+- [Shipping Info](https://royalceramicworld.ambikainfotech.online/shipping): Domestic and international shipping rates, processing times, and delivery details.
+- [Privacy Policy](https://royalceramicworld.ambikainfotech.online/privacy-policy): How customer data is collected and protected.
+- [Terms of Service](https://royalceramicworld.ambikainfotech.online/terms): Terms governing website use and product purchases.
+
+## Key Facts
+
+- All ceramics are handmade — slight natural variations are expected and intentional
+- Custom and bespoke orders accepted (4–8 week lead time; deposit required)
+- Free shipping on domestic orders above ₹5,000
+- Returns accepted within 14 days for unused items in original packaging
+- International shipping available on request
+- Payment accepted: Cash, Bank Transfer, UPI
+- Currency: INR
+
+## Full Content
+
+- [llm-full.txt](https://royalceramicworld.ambikainfotech.online/llm-full.txt): Complete site content for AI consumption

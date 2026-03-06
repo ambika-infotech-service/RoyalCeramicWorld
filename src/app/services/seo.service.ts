@@ -105,6 +105,50 @@ export class SeoService {
     if (canonical) {
       canonical.href = canonicalUrl;
     }
+
+    this.updateBreadcrumb(url);
+  }
+
+  private updateBreadcrumb(url: string): void {
+    const LABELS: Record<string, string> = {
+      '/products': 'All Products',
+      '/about': 'About Us',
+      '/contact': 'Contact',
+      '/privacy-policy': 'Privacy Policy',
+      '/terms': 'Terms of Service',
+      '/shipping': 'Shipping Info',
+    };
+
+    const items: Array<{ '@type': string; position: number; name: string; item?: string }> = [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE_URL}/home` },
+    ];
+
+    if (url !== '/home') {
+      if (url.startsWith('/collections/')) {
+        items.push({ '@type': 'ListItem', position: 2, name: 'Products', item: `${BASE_URL}/products` });
+        const slug = url.replace('/collections/', '');
+        const name = slug.charAt(0).toUpperCase() + slug.slice(1);
+        items.push({ '@type': 'ListItem', position: 3, name });
+      } else {
+        const label = LABELS[url] ?? url.replace('/', '');
+        items.push({ '@type': 'ListItem', position: 2, name: label });
+      }
+    }
+
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: items,
+    };
+
+    let el = document.getElementById('rcw-breadcrumb-ld') as HTMLScriptElement | null;
+    if (!el) {
+      el = document.createElement('script');
+      el.type = 'application/ld+json';
+      el.id = 'rcw-breadcrumb-ld';
+      document.head.appendChild(el);
+    }
+    el.textContent = JSON.stringify(schema);
   }
 
   private dynamicCollectionMeta(url: string): PageSeo | null {
