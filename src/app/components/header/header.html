@@ -1,22 +1,30 @@
-<header class="bg-white shadow-md">
+<header class="bg-white shadow-md sticky top-0 z-50">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-    <div class="flex items-center gap-2">
+    <a routerLink="/home" class="flex items-center gap-2 cursor-pointer">
       <div class="w-10 h-10 bg-ceramic-600 rounded-lg flex items-center justify-center text-white font-bold">R</div>
       <div>
         <h1 class="text-xl font-serif font-bold text-ceramic-900">Royal Ceramic World</h1>
         <p class="text-xs text-ceramic-600">Timeless Artistry</p>
       </div>
-    </div>
+    </a>
 
     <ul class="hidden md:flex gap-8 items-center text-ceramic-800 font-medium">
-      <li><a href="#home" class="hover:text-ceramic-600 transition">Home</a></li>
-      <li><a href="#products" class="hover:text-ceramic-600 transition">Products</a></li>
-      <li><a href="#about" class="hover:text-ceramic-600 transition">About</a></li>
-      <li><a href="#contact" class="hover:text-ceramic-600 transition">Contact</a></li>
+      <li>
+        <a routerLink="/home" routerLinkActive="text-ceramic-600 font-bold" class="hover:text-ceramic-600 transition">Home</a>
+      </li>
+      <li>
+        <a routerLink="/products" routerLinkActive="text-ceramic-600 font-bold" class="hover:text-ceramic-600 transition">Products</a>
+      </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="text-ceramic-600 font-bold" class="hover:text-ceramic-600 transition">About</a>
+      </li>
+      <li>
+        <a routerLink="/contact" routerLinkActive="text-ceramic-600 font-bold" class="hover:text-ceramic-600 transition">Contact</a>
+      </li>
     </ul>
 
-    <button class="bg-ceramic-600 hover:bg-ceramic-700 text-white px-6 py-2 rounded-lg font-medium transition">
+    <a routerLink="/contact" class="bg-ceramic-600 hover:bg-ceramic-700 text-white px-6 py-2 rounded-lg font-medium transition">
       Get in Touch
-    </button>
+    </a>
   </nav>
 </header>
