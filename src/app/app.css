@@ -11,21 +11,21 @@ html {
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-sans);
   line-height: 1.6;
-  color: #4a392b;
-  background-color: #ffffff;
+  color: var(--color-ceramic-900);
+  background-color: var(--color-white);
 }
 
 /* Smooth transitions */
 button,
 a {
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
 }
 
 /* Utility classes for common patterns */
 .transition {
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
 }
 
 /* Responsive utilities */
