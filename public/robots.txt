@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://royalceramicworld.ambikainfotech.online/sitemap.xml
