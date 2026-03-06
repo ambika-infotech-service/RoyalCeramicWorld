@@ -2,19 +2,31 @@
 
 @import 'tailwindcss';
 
-/* Royal Ceramic World Theme Variables */
+/* Royal Ceramic World — Premium Theme Variables */
 :root {
-  /* Primary Colors - Ceramic */
-  --color-ceramic-50: #f8f7f4;
-  --color-ceramic-100: #f0ebe4;
-  --color-ceramic-200: #e6daca;
-  --color-ceramic-300: #d4bfa3;
-  --color-ceramic-400: #b8956f;
-  --color-ceramic-500: #a17d4d;
-  --color-ceramic-600: #8b6842;
-  --color-ceramic-700: #6f5436;
-  --color-ceramic-800: #5c4632;
-  --color-ceramic-900: #4a392b;
+  /* Primary Colors - Rich Ceramic */
+  --color-ceramic-50: #faf7f2;
+  --color-ceramic-100: #f4ece0;
+  --color-ceramic-200: #e8d9bf;
+  --color-ceramic-300: #d4bc93;
+  --color-ceramic-400: #c09468;
+  --color-ceramic-500: #a97542;
+  --color-ceramic-600: #8f5f35;
+  --color-ceramic-700: #754d2d;
+  --color-ceramic-800: #5a3c27;
+  --color-ceramic-900: #3e2a1c;
+
+  /* Gold Accent Colors - Luxury */
+  --color-gold-50: #fefcf0;
+  --color-gold-100: #fef7d0;
+  --color-gold-200: #fce9a0;
+  --color-gold-300: #f8d264;
+  --color-gold-400: #f2b930;
+  --color-gold-500: #d9a21b;
+  --color-gold-600: #b88515;
+  --color-gold-700: #8e6412;
+  --color-gold-800: #6c4d14;
+  --color-gold-900: #4a3414;
 
   /* Secondary Colors - Clay */
   --color-clay-50: #fdf9f6;
@@ -50,7 +62,7 @@
 
   /* Fonts */
   --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-serif: 'Playfair Display', serif;
+  --font-serif: 'Playfair Display', 'Georgia', serif;
 
   /* Font Sizes */
   --text-xs: 0.75rem;
@@ -119,4 +131,31 @@
   --z-popover: 1400;
   --z-tooltip: 1500;
 }
+
+/* Global base styles */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-ceramic-50);
+  color: var(--color-ceramic-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-ceramic-100); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-ceramic-400);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-ceramic-600); }
+
+/* Text selection */
+::selection {
+  background: var(--color-gold-200);
+  color: var(--color-ceramic-900);
+}
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
 

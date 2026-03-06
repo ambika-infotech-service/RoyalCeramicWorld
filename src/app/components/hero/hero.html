@@ -1,36 +1,78 @@
-<section id="home" class="relative overflow-hidden bg-gradient-to-br from-ceramic-50 via-white to-clay-50 py-24 md:py-32">
-  <!-- Background decorative elements -->
-  <div class="absolute top-0 left-0 w-96 h-96 bg-ceramic-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -translate-x-1/2 -translate-y-1/2"></div>
-  <div class="absolute bottom-0 right-0 w-96 h-96 bg-clay-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 translate-x-1/2 translate-y-1/2"></div>
+<section id="home" class="relative min-h-[92vh] flex items-center overflow-hidden" style="background: linear-gradient(150deg, #fef9f0 0%, #faf4e8 40%, #f5ecda 100%);">
+  <!-- Warm ambient glow layers -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-1/4 right-1/4 w-[600px] h-[600px] rounded-full opacity-25" style="background: radial-gradient(circle, var(--color-gold-200), transparent 70%); filter: blur(80px);"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full opacity-20" style="background: radial-gradient(circle, var(--color-ceramic-200), transparent 70%); filter: blur(60px);"></div>
+    <div class="absolute top-0 right-0 w-[300px] h-[300px] rounded-full opacity-15" style="background: radial-gradient(circle, var(--color-clay-200), transparent 70%); filter: blur(50px);"></div>
+  </div>
+  <!-- Subtle grid texture -->
+  <div class="absolute inset-0 opacity-[0.04]" style="background-image: linear-gradient(var(--color-gold-400) 1px, transparent 1px), linear-gradient(90deg, var(--color-gold-400) 1px, transparent 1px); background-size: 60px 60px;"></div>
 
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-    <div class="grid md:grid-cols-2 gap-12 items-center">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-24 w-full">
+    <div class="grid md:grid-cols-2 gap-16 items-center">
       <!-- Left content -->
-      <div class="space-y-6">
-        <h2 class="text-5xl md:text-6xl font-serif font-bold text-ceramic-900 leading-tight">
-          Timeless <span class="text-ceramic-600">Ceramic</span> Artistry
+      <div class="space-y-8">
+        <!-- Premium badge -->
+        <div class="inline-flex items-center gap-2 rounded-full px-4 py-2 border text-sm" style="background: rgba(217,162,27,0.08); border-color: rgba(217,162,27,0.3);">
+          <span class="w-2 h-2 rounded-full animate-pulse" style="background: var(--color-gold-500);"></span>
+          <span class="font-medium tracking-widest text-xs uppercase" style="color: var(--color-gold-700);">Premium Collection 2026</span>
+        </div>
+
+        <!-- Headline -->
+        <h2 class="text-5xl md:text-7xl font-serif font-bold leading-[1.05]" style="color: var(--color-ceramic-900);">
+          Timeless<br>
+          <span class="font-serif" style="background: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-700)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Ceramic</span><br>
+          Artistry
         </h2>
-        <p class="text-lg text-ceramic-700 leading-relaxed">
+
+        <p class="text-lg leading-relaxed max-w-lg" style="color: var(--color-ceramic-600);">
           Discover exquisite handcrafted ceramics that blend ancient traditions with contemporary design. Each piece tells a story of artistry, quality, and passion.
         </p>
-        <div class="flex gap-4 pt-4">
-          <a routerLink="/products" class="bg-ceramic-600 hover:bg-ceramic-700 text-white px-8 py-3 rounded-lg font-semibold transition transform hover:scale-105 inline-block">
+
+        <!-- CTAs -->
+        <div class="flex flex-wrap gap-4">
+          <a routerLink="/products" class="px-8 py-3.5 rounded-lg font-semibold transition-all duration-200 hover:scale-105 inline-block shadow-lg" style="background: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-600)); color: #fff;">
             Explore Collection
           </a>
-          <a routerLink="/about" class="border-2 border-ceramic-600 text-ceramic-600 hover:bg-ceramic-50 px-8 py-3 rounded-lg font-semibold transition inline-block">
+          <a routerLink="/about" class="px-8 py-3.5 rounded-lg font-semibold transition-all duration-200 inline-block border hover:bg-ceramic-100" style="background: transparent; border-color: var(--color-ceramic-300); color: var(--color-ceramic-800);">
             Learn More
           </a>
         </div>
+
+        <!-- Stats row -->
+        <div class="flex gap-8 pt-6 mt-2" style="border-top: 1px solid var(--color-ceramic-200);">
+          <div>
+            <p class="text-3xl font-serif font-bold" style="color: var(--color-gold-600);">50+</p>
+            <p class="text-sm mt-0.5" style="color: var(--color-ceramic-500);">Years Heritage</p>
+          </div>
+          <div>
+            <p class="text-3xl font-serif font-bold" style="color: var(--color-gold-600);">500+</p>
+            <p class="text-sm mt-0.5" style="color: var(--color-ceramic-500);">Unique Designs</p>
+          </div>
+          <div>
+            <p class="text-3xl font-serif font-bold" style="color: var(--color-gold-600);">10k+</p>
+            <p class="text-sm mt-0.5" style="color: var(--color-ceramic-500);">Happy Clients</p>
+          </div>
+        </div>
       </div>
 
-      <!-- Right image placeholder -->
-      <div class="relative h-96 md:h-full">
-        <div class="absolute inset-0 bg-gradient-to-br from-ceramic-200 to-clay-200 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden">
-          <div class="text-center text-ceramic-600">
-            <svg class="w-32 h-32 mx-auto mb-4 opacity-20" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-            <p class="text-ceramic-600 font-medium">Featured Ceramic Collection</p>
+      <!-- Right showcase card -->
+      <div class="relative h-[460px] hidden md:block">
+        <div class="absolute inset-0 rounded-3xl overflow-hidden flex items-center justify-center border shadow-2xl" style="background: linear-gradient(135deg, #fff 0%, var(--color-ceramic-50) 60%, var(--color-clay-100) 100%); border-color: var(--color-ceramic-200);">
+          <!-- Inner warm glow -->
+          <div class="absolute inset-0" style="background: radial-gradient(ellipse at 60% 30%, rgba(217,162,27,0.08), transparent 60%);"></div>
+          <!-- Decorative rings -->
+          <div class="absolute top-8 right-8 w-36 h-36 rounded-full border opacity-30" style="border-color: var(--color-gold-400);"></div>
+          <div class="absolute bottom-10 left-10 w-52 h-52 rounded-full border opacity-15" style="border-color: var(--color-gold-500);"></div>
+          <div class="absolute top-1/2 left-1/2 w-72 h-72 rounded-full border opacity-10" style="border-color: var(--color-ceramic-300); transform: translate(-50%, -50%);"></div>
+          <!-- Center icon -->
+          <div class="text-center relative z-10">
+            <div class="w-28 h-28 mx-auto mb-5 rounded-full flex items-center justify-center border" style="background: linear-gradient(135deg, var(--color-gold-100), var(--color-gold-200)); border-color: var(--color-gold-300);">
+              <svg class="w-14 h-14" style="color: var(--color-gold-600);" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <p class="text-sm font-medium tracking-wider" style="color: var(--color-ceramic-500);">FEATURED CERAMIC COLLECTION</p>
           </div>
         </div>
       </div>

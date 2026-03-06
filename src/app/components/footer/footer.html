@@ -1,51 +1,55 @@
-<footer class="bg-ceramic-900 text-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="grid md:grid-cols-4 gap-8 mb-8">
+<footer style="background-color: #0F0B08; color: white;">
+  <!-- Top divider with gold accent -->
+  <div class="h-px w-full" style="background: linear-gradient(90deg, transparent, var(--color-gold-500), transparent);"></div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="grid md:grid-cols-4 gap-10 mb-12">
       <!-- Brand -->
-      <div>
-        <div class="flex items-center gap-2 mb-4">
-          <div class="w-8 h-8 bg-ceramic-600 rounded-lg flex items-center justify-center font-bold">R</div>
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-lg flex items-center justify-center font-bold text-base flex-shrink-0" style="background: linear-gradient(135deg, var(--color-gold-400), var(--color-gold-600)); color: #0F0B08;">R</div>
           <div>
-            <h3 class="font-serif font-bold">Royal Ceramic</h3>
-            <p class="text-xs text-ceramic-300">Timeless Artistry</p>
+            <h3 class="font-serif font-bold text-white leading-tight">Royal Ceramic</h3>
+            <p class="text-xs tracking-widest" style="color: var(--color-gold-500);">TIMELESS ARTISTRY</p>
           </div>
         </div>
-        <p class="text-ceramic-300 text-sm">Handcrafted ceramics bringing timeless beauty to your home.</p>
+        <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.4);">Handcrafted ceramics bringing timeless beauty and warmth to every home.</p>
       </div>
 
       <!-- Quick Links -->
       <div>
-        <h4 class="font-bold mb-4">Quick Links</h4>
-        <ul class="space-y-2 text-ceramic-300 text-sm">
-          <li><a routerLink="/home" class="hover:text-white transition">Home</a></li>
-          <li><a routerLink="/products" class="hover:text-white transition">Products</a></li>
-          <li><a routerLink="/about" class="hover:text-white transition">About Us</a></li>
-          <li><a routerLink="/contact" class="hover:text-white transition">Contact</a></li>
+        <h4 class="font-semibold mb-5 text-sm tracking-wider uppercase" style="color: var(--color-gold-400);">Quick Links</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a routerLink="/home" class="transition-colors duration-200 hover:text-white" style="color: rgba(255,255,255,0.45);">Home</a></li>
+          <li><a routerLink="/products" class="transition-colors duration-200 hover:text-white" style="color: rgba(255,255,255,0.45);">Products</a></li>
+          <li><a routerLink="/about" class="transition-colors duration-200 hover:text-white" style="color: rgba(255,255,255,0.45);">About Us</a></li>
+          <li><a routerLink="/contact" class="transition-colors duration-200 hover:text-white" style="color: rgba(255,255,255,0.45);">Contact</a></li>
         </ul>
       </div>
 
       <!-- Collections -->
       <div>
-        <h4 class="font-bold mb-4">Collections</h4>
-        <ul class="space-y-2 text-ceramic-300 text-sm">
-          <li><a href="#" class="hover:text-white transition">Dinnerware</a></li>
-          <li><a href="#" class="hover:text-white transition">Decorative</a></li>
-          <li><a href="#" class="hover:text-white transition">Planters</a></li>
-          <li><a href="#" class="hover:text-white transition">Art & Sculpture</a></li>
+        <h4 class="font-semibold mb-5 text-sm tracking-wider uppercase" style="color: var(--color-gold-400);">Collections</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#" class="transition-colors duration-200 hover:text-white" style="color: rgba(255,255,255,0.45);">Dinnerware</a></li>
+          <li><a href="#" class="transition-colors duration-200 hover:text-white" style="color: rgba(255,255,255,0.45);">Decorative</a></li>
+          <li><a href="#" class="transition-colors duration-200 hover:text-white" style="color: rgba(255,255,255,0.45);">Planters</a></li>
+          <li><a href="#" class="transition-colors duration-200 hover:text-white" style="color: rgba(255,255,255,0.45);">Art &amp; Sculpture</a></li>
         </ul>
       </div>
 
       <!-- Newsletter -->
       <div>
-        <h4 class="font-bold mb-4">Newsletter</h4>
-        <p class="text-ceramic-300 text-sm mb-4">Subscribe for new collections and updates.</p>
+        <h4 class="font-semibold mb-5 text-sm tracking-wider uppercase" style="color: var(--color-gold-400);">Newsletter</h4>
+        <p class="text-sm mb-4" style="color: rgba(255,255,255,0.4);">Subscribe for new collections and exclusive updates.</p>
         <div class="flex">
           <input
             type="email"
             placeholder="Enter email"
-            class="px-4 py-2 rounded-l-lg text-ceramic-900"
+            class="flex-1 px-4 py-2.5 rounded-l-lg text-sm outline-none border-0"
+            style="background: rgba(255,255,255,0.07); color: white; caret-color: var(--color-gold-400);"
           />
-          <button class="bg-ceramic-600 hover:bg-ceramic-700 px-4 py-2 rounded-r-lg transition font-semibold">
+          <button class="px-4 py-2.5 rounded-r-lg font-semibold text-sm transition-all duration-200 hover:brightness-110" style="background: linear-gradient(135deg, var(--color-gold-500), var(--color-gold-600)); color: #0F0B08;">
             Subscribe
           </button>
         </div>
@@ -53,35 +57,27 @@
     </div>
 
     <!-- Divider -->
-    <div class="border-t border-ceramic-800 pt-8">
-      <div class="grid md:grid-cols-3 gap-8 items-center">
+    <div class="pt-8" style="border-top: 1px solid rgba(255,255,255,0.07);">
+      <div class="grid md:grid-cols-3 gap-6 items-center">
         <!-- Social links -->
-        <div class="flex gap-4">
-          <a href="#" class="w-10 h-10 bg-ceramic-800 rounded-full flex items-center justify-center hover:bg-ceramic-600 transition">
-            f
-          </a>
-          <a href="#" class="w-10 h-10 bg-ceramic-800 rounded-full flex items-center justify-center hover:bg-ceramic-600 transition">
-            in
-          </a>
-          <a href="#" class="w-10 h-10 bg-ceramic-800 rounded-full flex items-center justify-center hover:bg-ceramic-600 transition">
-            🐦
-          </a>
-          <a href="#" class="w-10 h-10 bg-ceramic-800 rounded-full flex items-center justify-center hover:bg-ceramic-600 transition">
-            📷
-          </a>
+        <div class="flex gap-3">
+          <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-200 hover:scale-110 border" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.55);">f</a>
+          <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full flex items-center justify-center text-xs font-bold transition-all duration-200 hover:scale-110 border" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.55);">in</a>
+          <a href="#" aria-label="Twitter" class="w-9 h-9 rounded-full flex items-center justify-center text-sm transition-all duration-200 hover:scale-110 border" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.55);">𝕏</a>
+          <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full flex items-center justify-center text-sm transition-all duration-200 hover:scale-110 border" style="background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.1); color: rgba(255,255,255,0.55);">◉</a>
         </div>
 
         <!-- Copyright -->
-        <div class="text-center text-ceramic-400 text-sm space-y-2">
+        <div class="text-center text-sm space-y-1" style="color: rgba(255,255,255,0.3);">
           <p>© 2026 Royal Ceramic World. All rights reserved.</p>
-          <p>Designed and developed by <a href="https://ambikainfotech.online/" target="_blank" rel="noopener noreferrer" class="text-ceramic-300 hover:text-white transition">Ambika Infotech</a></p>
+          <p>Designed &amp; developed by <a href="https://ambikainfotech.online/" target="_blank" rel="noopener noreferrer" class="transition-colors duration-200 hover:text-white" style="color: rgba(255,255,255,0.5);">Ambika Infotech</a></p>
         </div>
 
         <!-- Footer links -->
-        <div class="text-right text-ceramic-400 text-sm space-y-2 md:space-y-0 md:space-x-4">
-          <a href="#" class="hover:text-white transition">Privacy Policy</a>
-          <a href="#" class="hover:text-white transition">Terms of Service</a>
-          <a href="#" class="hover:text-white transition">Shipping Info</a>
+        <div class="flex flex-wrap justify-end gap-4 text-sm" style="color: rgba(255,255,255,0.3);">
+          <a href="#" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+          <a href="#" class="hover:text-white transition-colors duration-200">Shipping Info</a>
         </div>
       </div>
     </div>
