@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# AI crawlers — allow llms.txt and llm-full.txt
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+Sitemap: https://royalceramicworld.ambikainfotech.online/sitemap.xml
+Sitemap: https://royalceramicworld.ambikainfotech.online/sitemap.xml
+
+# LLM content files
+# https://royalceramicworld.ambikainfotech.online/llms.txt
+# https://royalceramicworld.ambikainfotech.online/llm-full.txt
