@@ -159,3 +159,72 @@ body {
 /* Smooth scrolling */
 html { scroll-behavior: smooth; }
 
+/* =============================================
+   HERO — load animations (run on page open)
+   ============================================= */
+@keyframes heroBadgeDrop {
+  from { opacity: 0; transform: translateY(-14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes heroSlideIn {
+  from { opacity: 0; transform: translateX(40px) scale(0.97); }
+  to   { opacity: 1; transform: translateX(0) scale(1); }
+}
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+
+.hero-badge    { animation: heroBadgeDrop 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) 0.1s  both; }
+.hero-headline { animation: heroFadeUp    0.7s cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s  both; }
+.hero-body     { animation: heroFadeUp    0.7s cubic-bezier(0.22, 0.61, 0.36, 1) 0.38s both; }
+.hero-ctas     { animation: heroFadeUp    0.7s cubic-bezier(0.22, 0.61, 0.36, 1) 0.52s both; }
+.hero-stats    { animation: heroFadeUp    0.7s cubic-bezier(0.22, 0.61, 0.36, 1) 0.66s both; }
+.hero-card     {
+  animation:
+    heroSlideIn 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) 0.35s both,
+    floatCard   5s ease-in-out 1.3s infinite;
+}
+
+/* =============================================
+   SCROLL-TRIGGERED animations (via directive)
+   ============================================= */
+.sa-hidden { opacity: 0; }
+.sa-visible {
+  animation-duration: 0.65s;
+  animation-fill-mode: both;
+  animation-delay: var(--sa-delay, 0ms);
+  animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes slideFromLeft {
+  from { opacity: 0; transform: translateX(-36px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideFromRight {
+  from { opacity: 0; transform: translateX(36px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.88); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.fade-up         { animation-name: fadeUp; }
+.fade-in         { animation-name: fadeIn; }
+.slide-from-left { animation-name: slideFromLeft; }
+.slide-from-right{ animation-name: slideFromRight; }
+.scale-up        { animation-name: scaleUp; }
+

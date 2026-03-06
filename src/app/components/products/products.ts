@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ScrollAnimateDirective } from '../../directives/scroll-animate.directive';
 
 interface Product {
   id: number;
@@ -13,7 +14,7 @@ interface Product {
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, ScrollAnimateDirective],
   templateUrl: './products.html',
   styleUrl: './products.css',
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -1,7 +1,7 @@
 <section id="products" class="py-24" style="background-color: var(--color-ceramic-50);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section header -->
-    <div class="text-center mb-16">
+    <div appScrollAnimate="fade-up" class="text-center mb-16">
       <div class="inline-flex items-center gap-3 mb-5">
         <div class="h-px w-10" style="background: var(--color-gold-500);"></div>
         <span class="text-xs font-semibold tracking-[0.25em] uppercase" style="color: var(--color-gold-600);">Our Collections</span>
@@ -17,8 +17,8 @@
 
     <!-- Products grid -->
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      @for (product of products; track product.id) {
-        <div class="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border hover:border-gold-300 hover:-translate-y-1.5" style="border-color: var(--color-ceramic-100);">
+      @for (product of products; track product.id; let i = $index) {
+        <div appScrollAnimate="scale-up" [delay]="i * 120" class="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-300 border hover:border-gold-300 hover:-translate-y-1.5" style="border-color: var(--color-ceramic-100);">
           <!-- Card image area -->
           <div class="relative p-8 h-52 flex flex-col items-center justify-center overflow-hidden" style="background: linear-gradient(135deg, var(--color-ceramic-50), var(--color-clay-50));">
             <div class="absolute top-0 right-0 w-32 h-32 rounded-full translate-x-10 -translate-y-10 opacity-30" style="background: var(--color-gold-200);"></div>

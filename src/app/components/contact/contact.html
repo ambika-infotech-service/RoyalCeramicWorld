@@ -1,7 +1,7 @@
 <section id="contact" class="py-24" style="background: var(--color-ceramic-50);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Section header -->
-    <div class="text-center mb-16">
+    <div appScrollAnimate="fade-up" class="text-center mb-16">
       <div class="inline-flex items-center gap-3 mb-5">
         <div class="h-px w-10" style="background: var(--color-gold-500);"></div>
         <span class="text-xs font-semibold tracking-[0.25em] uppercase" style="color: var(--color-gold-600);">Get In Touch</span>
@@ -17,19 +17,19 @@
 
     <div class="grid md:grid-cols-3 gap-6 mb-16">
       <!-- Contact info cards -->
-      <div class="bg-white rounded-2xl p-8 text-center border transition-all duration-200 hover:shadow-lg hover:border-gold-200" style="border-color: var(--color-ceramic-100);">
+      <div appScrollAnimate="scale-up" [delay]="0" class="bg-white rounded-2xl p-8 text-center border transition-all duration-200 hover:shadow-lg hover:border-gold-200" style="border-color: var(--color-ceramic-100);">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center text-3xl border" style="background: linear-gradient(135deg, var(--color-gold-100), var(--color-gold-200)); border-color: var(--color-gold-200);">📍</div>
         <h3 class="font-bold text-lg mb-2" style="color: var(--color-ceramic-900);">Location</h3>
         <p class="text-sm leading-relaxed" style="color: var(--color-ceramic-600);">123 Ceramic Lane<br/>Artisan City, AC 12345<br/>World</p>
       </div>
 
-      <div class="bg-white rounded-2xl p-8 text-center border transition-all duration-200 hover:shadow-lg hover:border-gold-200" style="border-color: var(--color-ceramic-100);">
+      <div appScrollAnimate="scale-up" [delay]="100" class="bg-white rounded-2xl p-8 text-center border transition-all duration-200 hover:shadow-lg hover:border-gold-200" style="border-color: var(--color-ceramic-100);">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center text-3xl border" style="background: linear-gradient(135deg, var(--color-gold-100), var(--color-gold-200)); border-color: var(--color-gold-200);">📞</div>
         <h3 class="font-bold text-lg mb-2" style="color: var(--color-ceramic-900);">Phone</h3>
         <p class="text-sm leading-relaxed" style="color: var(--color-ceramic-600);">+1 (555) 123-4567<br/>Mon - Fri: 9am - 6pm<br/>Sat - Sun: Closed</p>
       </div>
 
-      <div class="bg-white rounded-2xl p-8 text-center border transition-all duration-200 hover:shadow-lg hover:border-gold-200" style="border-color: var(--color-ceramic-100);">
+      <div appScrollAnimate="scale-up" [delay]="200" class="bg-white rounded-2xl p-8 text-center border transition-all duration-200 hover:shadow-lg hover:border-gold-200" style="border-color: var(--color-ceramic-100);">
         <div class="w-14 h-14 mx-auto mb-4 rounded-2xl flex items-center justify-center text-3xl border" style="background: linear-gradient(135deg, var(--color-gold-100), var(--color-gold-200)); border-color: var(--color-gold-200);">✉️</div>
         <h3 class="font-bold text-lg mb-2" style="color: var(--color-ceramic-900);">Email</h3>
         <p class="text-sm leading-relaxed" style="color: var(--color-ceramic-600);">contact&#64;royalceramicworld.com<br/>sales&#64;royalceramicworld.com<br/>support&#64;royalceramicworld.com</p>
@@ -37,7 +37,7 @@
     </div>
 
     <!-- Contact form -->
-    <div class="max-w-2xl mx-auto bg-white rounded-3xl p-10 shadow-xl border" style="border-color: var(--color-ceramic-100);">
+    <div appScrollAnimate="fade-up" [delay]="100" class="max-w-2xl mx-auto bg-white rounded-3xl p-10 shadow-xl border" style="border-color: var(--color-ceramic-100);">
       <h3 class="text-2xl font-serif font-bold text-center mb-8" style="color: var(--color-ceramic-900);">Send us a Message</h3>
       <form (submit)="onSubmit()" class="space-y-6">
         <div class="grid md:grid-cols-2 gap-6">
